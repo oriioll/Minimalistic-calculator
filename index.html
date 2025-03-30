@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Metadatos básicos -->
+        <meta charset="utf-8">
+        <title>Minimalistic calculator | Modo Claro/Oscuro</title>
+        <meta name="description" content="Calculadora minimalista con diseño neumórfico interactivo. Cambia entre modo claro y oscuro. Ideal para matemáticas básicas con estilo moderno.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <meta name="theme-color" content="#e9e7e7" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#1e1e1e" media="(prefers-color-scheme: dark)">
+    
+        <!-- Favicon (incluye múltiples formatos) -->
+        <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+        <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    
+        <!-- Open Graph / Redes Sociales -->
+        <meta property="og:title" content="Calculadora Neumórfica Minimalista">
+        <meta property="og:description" content="Diseño neumórfico interactivo con modo claro y oscuro. Perfecta para cálculos diarios con estilo.">
+        <meta property="og:type" content="website">
+        <meta property="og:image:alt" content="Captura de pantalla de la calculadora neumórfica">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+    
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Calculadora Neumórfica Minimalista">
+        <meta name="twitter:description" content="Diseño neumórfico con modo claro/oscuro. ¡Prueba su interfaz única!">
+
+    
+        <!-- iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+        <!-- Manifest PWA -->
+        <link rel="manifest" href="/site.webmanifest">
+    
+        <!-- Hojas de estilo -->
+        <link rel="stylesheet" href="./styles/styles.css">
+    
+        <!-- Preconexión para mejorar performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+        <!-- Canonical URL (reemplaza con tu dominio real) -->
+    </head>
+    <body>
+        <header>
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider"></span>
+            </label>
+        </header>
+        <div class="main">
+      <div class="calculadora">
+        <input type="text" id="pantalla" readonly >
+        <div class="botones">
+            <button onclick="limpiarPantalla()">C</button>
+            <button onclick="borrarUltimo()">DEL</button>
+            <button onclick="operacion('%')">%</button>
+            <button onclick="operacion('/')">/</button>
+            <button onclick="agregarNumero('7')">7</button>
+            <button onclick="agregarNumero('8')">8</button>
+            <button onclick="agregarNumero('9')">9</button>
+            <button onclick="operacion('*')">X</button>
+            <button onclick="agregarNumero('4')">4</button>
+            <button onclick="agregarNumero('5')">5</button>
+            <button onclick="agregarNumero('6')">6</button>
+            <button onclick="operacion('-')">-</button>
+            <button onclick="agregarNumero('1')">1</button>
+            <button onclick="agregarNumero('2')">2</button>
+            <button onclick="agregarNumero('3')">3</button>
+            <button onclick="operacion('+')">+</button>
+            <button onclick="agregarNumero('0')">0</button>
+            <button onclick="agregarNumero('.')">.</button>
+            <button class="eq" onclick="calcularResultado()">=</button>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <a href="https://linktr.ee/oriioll__" target="_blank">
+            Minimalistic Calculator | Made by @oriioll
+        </a>
+      </footer>
+      <script src="./js/script.js"></script>
+
+      </script>
+    </body>
+</html>
